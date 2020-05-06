@@ -64,7 +64,11 @@ for i in range(1,3):
               print ("congratullations player1 you have won")
            elif player2==choices[2]:
               print ("the match is tie")
-checkcorrectchoice
+
+
+
+
+checkcorrectchoice()
 player = True
 while player==True:
     player1 = (input("please insert your choice:"))            
