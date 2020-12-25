@@ -22,31 +22,40 @@ def checkcorrectchoice():                                                      #
 
 
 player = True
-while player==True:
+while player:
    for i in range(1,4):
       player1 = (str(input("please insert your choice:")))            
       player2 = (str(input("please insert your choice:")))
       if player1==choices[0]:
          if player2==choices[1]:
             print ("congratullations player2 you have won")                        #checking for someone's win
+            break
          elif player2==choices[2]:
             print ("congratullations player1 you have won")
-         elif player2==choices[1]:
+            break
+         elif player2==choices[0]:
             print ("the match is tie")
+            break
       elif player1==choices[1]:
          if player2==choices[0]:
             print ("congratullations player1 you have won")
+            break
          elif player2==choices[2]:
             print ("congratullations player2 you have won")
+            break
          elif player2==choices[1]:
             print ("the match is tie")
+            break
       elif player1==choices[2]:
          if player2==choices[0]:
             print ("congratullations player2 you have won")
+            break
          elif player2==choices[1]:
             print ("congratullations player1 you have won")
+            break
          elif player2==choices[2]:
             print ("the match is tie")
+            break
 player==False
 
 #testing 
