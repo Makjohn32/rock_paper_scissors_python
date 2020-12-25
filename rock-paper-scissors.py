@@ -10,13 +10,15 @@ choices=['rock', 'paper', 'scissors']
 
 
 def checkcorrectchoice():                                                      #check for errors
-    if player1.isdigit() and player2.isdigit():
+   if player1.isdigit() and player2.isdigit():
         print ("your choices are wrong please try again")
     
-    else:
-        player1 or player2!=choices[0] or choices[1] or choices[2]
-        print ("invalid choice")
-        return player1
+   elif player1!=choices[0] or player1!=choices[1] or player1!=choices[2]:
+      print ("invalid choice")
+      return player1
+   
+   elif player2 != choices[0] or player2 != choices[1] or player2 != choices[2]:
+      return player2
 
 
 
@@ -26,6 +28,7 @@ while player:
    for i in range(1,4):
       player1 = (str(input("please insert your choice:")))            
       player2 = (str(input("please insert your choice:")))
+      checkcorrectchoice()
       if player1==choices[0]:
          if player2==choices[1]:
             print ("congratullations player2 you have won")                        #checking for someone's win
@@ -56,13 +59,13 @@ while player:
          elif player2==choices[2]:
             print ("the match is tie")
             break
-player==False
+   player=False
 
 #testing 
 
 
 
-checkcorrectchoice()
+
 
 
 
