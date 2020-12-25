@@ -14,7 +14,7 @@ def checkcorrectchoice():                                                      #
         print ("your choices are wrong please try again")
     
    elif player1!=choices[0] or player1!=choices[1] or player1!=choices[2]:
-      print ("invalid choice")
+      
       return player1
    
    elif player2 != choices[0] or player2 != choices[1] or player2 != choices[2]:
@@ -23,8 +23,7 @@ def checkcorrectchoice():                                                      #
 
 
 
-player = True
-while player:
+
    for i in range(1,4):
       player1 = (str(input("please insert your choice:")))            
       player2 = (str(input("please insert your choice:")))
@@ -59,7 +58,7 @@ while player:
          elif player2==choices[2]:
             print ("the match is tie")
             break
-   player=False
+  
 
 
 
